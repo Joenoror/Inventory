@@ -24,8 +24,8 @@ import androidx.room.PrimaryKey
  */
 @Entity(tableName = "items")
 data class Item(
-    @PrimaryKey(autoGenerate = false)
-    val id: Int = 0,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 1,
     val name: String,
     val price: Double,
     val quantity: Int
